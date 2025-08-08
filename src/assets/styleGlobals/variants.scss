@@ -1,0 +1,28 @@
+//COLORS
+$bg-yellow: #ffcc00;
+$bg-gray: #EBEBEB;
+$bg-blue:#3483fa;
+$bg-secondary-gray: #FFFFFF;
+$text-gray: #737373;
+
+
+// Typography
+$font-family-base: "Roboto", sans-serif;
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 24px;
+$font-size-2xl: 28px;
+$font-size-3xl: 46px;
+
+// Breakpoints
+$breakpoints: (
+  small: 576px,
+  medium: 768px,
+  large: 992px,
+  xlarge: 1200px
+);
+
+//Border
+$border-radius: 4px

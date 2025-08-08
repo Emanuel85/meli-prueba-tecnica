@@ -1,0 +1,50 @@
+@use '../../assets/styleGlobals/variants.scss' as *;
+
+.searchForm {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: 1.5px solid transparent;
+  transition: border-color 0.2s ease-in-out;
+
+  &:focus-within {
+    border-color: $bg-blue; // ← solo cambia el color
+  }
+
+  .formInputs {
+    flex: 1;
+    height: 36px;
+    padding: 0 16px;
+    border: $border-radius;
+    font-size: $font-size-md;
+    outline: none;
+
+    &::placeholder {
+      color: $text-gray;
+      font-size: $font-size-lg;
+    }
+  }
+
+  
+  .formButton {
+    height: 36px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-secondary-gray;
+    border: none;
+    border-radius: 0 $border-radius $border-radius 0;
+    padding: 8px 12px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $bg-gray;
+    }
+
+    .formIcon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
