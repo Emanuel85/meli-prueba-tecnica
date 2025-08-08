@@ -1,0 +1,33 @@
+{
+    "categories": [
+        "Tecnología",
+        "Celulares",
+        "Smartphones"
+    ],
+    "items": [
+        {
+            "id": "MLA111222",
+            "title": "iPhone 13 128GB",
+            "price": {
+                "currency": "ARS",
+                "amount": 800000,
+                "decimals": 0
+            },
+            "picture": "https://your-cdn.com/images/iphone13.jpg",
+            "condition": "new",
+            "free_shipping": true
+        },
+        {
+            "id": "MLA333444",
+            "title": "Samsung Galaxy S22",
+            "price": {
+                "currency": "ARS",
+                "amount": 750000,
+                "decimals": 0
+            },
+            "picture": "https://your-cdn.com/images/galaxy22.jpg",
+            "condition": "new",
+            "free_shipping": false
+        }
+    ]
+}
