@@ -1,7 +1,9 @@
-import Products from '../containers/listProducts';
+import React from 'react'
 
-export default function Home() {
+const Home = () => {
   return (
-    <Products />
-  );
+    <div></div>
+  )
 }
+
+export default Home

@@ -1,10 +1,14 @@
 //COLORS
 $bg-yellow: #ffcc00;
-$bg-gray: #EBEBEB;
-$bg-blue:#3483fa;
-$bg-secondary-gray: #FFFFFF;
+$bg-gray: #efefef;
+$bg-secondary-gray: #737373;
+$bg-blue: #3483fa;
+$bg-secondary-blue: #e3edfb;
+$bg-white: white;
 $text-gray: #737373;
-
+$text-blue: #3483fa;
+$text-secondary-gray: #000000e6;
+$text-terciary-gray:#00a650;
 
 // Typography
 $font-family-base: "Roboto", sans-serif;
@@ -12,9 +16,17 @@ $font-size-xs: 12px;
 $font-size-sm: 14px;
 $font-size-md: 16px;
 $font-size-lg: 18px;
-$font-size-xl: 24px;
-$font-size-2xl: 28px;
-$font-size-3xl: 46px;
+$font-size-xl: 20px;
+$font-size-2xl: 24px;
+$font-size-3xl: 28px;
+$font-size-4xl: 36px;
+$font-size-5xl: 46px;
+
+// Font Weight
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
 
 // Breakpoints
 $breakpoints: (
@@ -25,4 +37,4 @@ $breakpoints: (
 );
 
 //Border
-$border-radius: 4px
+$border-radius: 6px;
