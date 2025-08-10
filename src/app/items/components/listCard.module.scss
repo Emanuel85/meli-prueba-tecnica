@@ -1,0 +1,12 @@
+@use "../../../assets/styleGlobals/variants.scss" as *;
+@use "sass:map";
+
+.ListCard {
+  max-width: map.get($breakpoints, xlarge);
+  border-radius: $border-radius;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $bg-white;
+  margin: 20px auto;
+}

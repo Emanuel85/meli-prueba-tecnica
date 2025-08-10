@@ -1,0 +1,90 @@
+@use "../../../assets/styleGlobals/variants.scss" as *;
+@use "sass:map";
+
+.container_card {
+  display: flex;
+  border-bottom: 4px solid $bg-gray;
+  padding: 16px;
+  cursor: pointer;
+
+  .card_image {
+    width: 180px;
+    height: 180px;
+    border-radius: $border-radius;
+    margin-right: 16px;
+    object-fit: contain;
+  }
+
+  .card_info {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0 16px 0;
+    width: 70%;
+
+    .info_details {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .details_price {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-size: $font-size-2xl;
+        margin-bottom: 32px;
+      }
+
+      .details_shipping {
+        font-size: $font-size-xs;
+        text-transform: capitalize;
+        color: $text-terciary-gray;
+        padding: 4px;
+        font-weight: $font-weight-bold;
+        background-color: #d3ffdc;
+        width: 132px;
+      }
+    }
+
+    .info_title {
+      font-weight: $font-weight-light;
+      font-size: $font-size-xl;
+      line-height: 25px;
+      max-width: 70%;
+      text-transform: capitalize;
+      color: $text-secondary-gray;
+    }
+  }
+}
+
+@media (max-width: map.get($breakpoints, small)) {
+  .container_card {
+    .card_image {
+      width: 120px;
+      height: 120px;
+    }
+
+    .card_info {
+      width: 100%;
+      padding: 0;
+      gap: 8px;
+
+      .info_details {
+        .details_price {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          font-size: $font-size-lg;
+          margin-bottom: 8px;
+        }
+      }
+
+      .info_title {
+        font-size: $font-size-md;
+        max-width: 100%;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

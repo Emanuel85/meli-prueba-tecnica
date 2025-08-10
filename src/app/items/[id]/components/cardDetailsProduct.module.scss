@@ -1,0 +1,85 @@
+ @use "../../../../assets/styleGlobals/variants.scss" as *;
+ @use "sass:map";
+
+ .card_details {
+
+     .details_sales {
+         font-size: $font-size-sm;
+         color: $text-gray;
+         margin-bottom: 16px;
+     }
+
+     .details_ranking {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         margin: 5px 0;
+
+         .ranking_title {
+             font-size: 15px;
+             color: $text-secondary-gray;
+         }
+
+         .ranking_score {
+             color: $text-gray
+         }
+
+         .ranking_count {
+             color: $text-gray
+         }
+     }
+
+     .details_price {
+         margin-top: 16px;
+         display: flex;
+         flex-direction: column;
+
+         .price_value {
+             margin-bottom: 16px;
+             font-size: $font-size-4xl;
+             font-weight: 200;
+         }
+
+         .price_tax {
+             font-size: $font-size-sm;
+             color: $text-gray;
+             margin-bottom: 8px;
+         }
+
+         .price_pago {
+             text-align: left;
+             background: none;
+             color: $bg-blue;
+             border: none;
+             cursor: pointer;
+         }
+
+     }
+
+     .rating {
+         position: relative;
+         display: inline-block;
+         line-height: 1;
+
+
+         .row {
+             padding: 0px 5px;
+             font-size: 20px;
+             letter-spacing: 2px;
+         }
+
+         .base {
+             color: #c9d1d9;
+         }
+
+         .fill {
+             color: #1f6feb;
+             position: absolute;
+             left: 0;
+             top: 0;
+             overflow: hidden;
+             white-space: nowrap;
+         }
+     }
+
+ }

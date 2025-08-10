@@ -1,0 +1,26 @@
+@use "../../assets/styleGlobals/variants.scss" as *;
+.container_error {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: calc(100vh - 54px);
+    width: 100vw;
+    align-content: center;
+    justify-content: center;
+    background-color: $bg-gray;
+
+    .error_msg {
+        .msg_primary {
+            color: $text-secondary-gray;
+            font-size: $font-size-2xl;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .msg_secondary {
+            color: $text-gray;
+            font-size: $font-size-md;
+            text-align: center;
+        }
+    }
+}

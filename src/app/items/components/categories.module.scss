@@ -1,0 +1,45 @@
+@use "../../../assets/styleGlobals/variants.scss" as *;
+
+.container_navBar {
+  padding: 16px 20px;
+
+  .navBar_list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    .list_item {
+      display: flex;
+      align-items: center;
+      font-size: $font-size-sm;
+      color: $text-gray;
+      cursor: pointer;
+
+      &:hover {
+        color: $text-terciary-gray;
+      }
+
+      &:last-child {
+        font-weight: bold;
+      }
+
+      .list_separator {
+        margin: 0 8px;
+        color: $text-gray;
+
+        padding: 0;
+      }
+
+      .no_list_text {
+        cursor: default;
+
+        &:hover {
+          color: $text-gray;
+        }
+      }
+    }
+  }
+}

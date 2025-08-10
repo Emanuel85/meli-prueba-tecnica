@@ -1,0 +1,176 @@
+@use "../../../../assets/styleGlobals/variants.scss" as *;
+@use "sass:map";
+
+.card_info {
+    width: 360px;
+    text-align: start;
+    border: solid 1px $bg-gray;
+    padding: 16px;
+    border-radius: 4px;
+
+    .info_sales {
+        font-size: $font-size-sm;
+        color: $text-secondary-gray;
+        margin-bottom: 8px;
+        text-align: end;
+        font-weight: 700;
+    }
+
+    .info_title {
+        font-size: $font-size-xl;
+        font-weight: bold;
+        padding-bottom: 32px;
+    }
+
+    .info_price {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        margin-bottom: 32px;
+
+        .info_price_value {
+            font-size: $font-size-3xl;
+        }
+
+        .info_tax_value {
+            font-size: $font-size-sm;
+            color: $text-gray;
+        }
+    }
+
+    .info_shipping {
+        font-size: $font-size-sm;
+        font-weight: $font-weight-bold;
+        margin-bottom: 32px;
+
+        .shipping_text_free {
+            color: $text-terciary-gray;
+            padding-bottom: 16px;
+
+            .shipping_text_free_secondary {
+                color: $text-gray;
+                padding-bottom: 16px;
+            }
+        }
+
+        .shipping_text_withdraw {
+            color: $text-terciary-gray;
+
+            .shipping_text_withdraw_secondary {
+                color: $text-gray;
+                padding-bottom: 6px;
+            }
+        }
+
+        .shipping_map {
+            background: none;
+            color: $bg-blue;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    .info_stock {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        margin-bottom: 32px;
+
+        .stock_title {
+            font-size: $font-size-xl;
+            font-weight: $font-weight-bold;
+            padding-bottom: 16px;
+        }
+
+        .stock_select {
+            .title {
+                font-size: $font-size-lg;
+            }
+
+            .select {
+                border: none;
+                font-size: $font-size-md;
+                font-weight: $font-weight-bold;
+            }
+
+            .tax_value {
+                font-size: $font-size-sm;
+                color: $text-gray;
+            }
+        }
+    }
+
+    .info_buttons {
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        justify-content: space-evenly;
+        margin-bottom: 32px;
+
+        .button_sell {
+            background-color: $bg-blue;
+            color: white;
+            font-weight: 600;
+            padding: 10px 20px;
+            width: 100%;
+            height: 50px;
+            border: none;
+            border-radius: $border-radius;
+            cursor: pointer;
+        }
+
+        .button_add {
+            background-color: $bg-secondary-blue;
+            color: $text-blue;
+            font-weight: 600;
+            height: 50px;
+            padding: 10px 20px;
+            width: 100%;
+            border: none;
+            border-radius: $border-radius;
+            cursor: pointer;
+        }
+    }
+
+    .info_seller {
+        display: flex;
+        flex-direction: column;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-bold;
+        margin-bottom: 32px;
+
+        .seller_details {
+            margin-bottom: 8px;
+
+            .details_text {
+                color: $text-gray;
+            }
+
+            .details_text_secondary {
+                background: none;
+                color: $bg-blue;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        .details_sell_amount {
+            font-size: $font-size-md;
+            color: $text-secondary-gray;
+            margin-bottom: 8px;
+        }
+
+        .details_sell_check {
+            color: $text-gray;
+        }
+    }
+
+}
+
+@media (max-width: map.get($breakpoints, small)) {
+    .card_info {
+        width: 334px;
+    }
+}

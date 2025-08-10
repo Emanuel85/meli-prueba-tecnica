@@ -1,0 +1,7 @@
+@use "../../assets/styleGlobals/variants.scss" as *;
+
+.container_itemsCategory {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-gray;
+}
