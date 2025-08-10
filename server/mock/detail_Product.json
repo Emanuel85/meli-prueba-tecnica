@@ -12,11 +12,12 @@
                 "amount": 800000,
                 "decimals": 0
             },
-            "picture": "https://your-cdn.com/images/iphone13.jpg",
+            "picture": "https://picsum.photos/200/300?random=3",
             "condition": "new",
             "free_shipping": true,
             "sold_quantity": 23,
-            "description": "El nuevo iPhone 13 con increíble rendimiento y cámara."
+            "description": "El nuevo iPhone 13 con increíble rendimiento y cámara.",
+            "rating": { "score": 4.0, "count": 255 }
         }
     },
     {
@@ -32,11 +33,96 @@
                 "amount": 750000,
                 "decimals": 0
             },
-            "picture": "https://your-cdn.com/images/galaxy22.jpg",
+            "picture": "https://picsum.photos/200/300?random=4",
             "condition": "new",
             "free_shipping": true,
             "sold_quantity": 3,
-            "description": "El nuevo Samsung Galaxy S22 con increíble rendimiento y cámara."
+            "description": "El nuevo Samsung Galaxy S22 con increíble rendimiento y cámara.",
+            "rating": { "score": 3.2, "count": 335 }
+        }
+    },
+    {
+        "author": {
+            "name": "Juan",
+            "lastname": "Pérez"
+        },
+        "item": {
+            "id": "MLA555666",
+            "title": "Samsung Smart TV 55\" 4K UHD",
+            "price": {
+                "currency": "ARS",
+                "amount": 450000,
+                "decimals": 0
+            },
+            "picture": "https://picsum.photos/200/300?random=5",
+            "condition": "new",
+            "free_shipping": true,
+            "sold_quantity": 17,
+            "description": "Smart TV 55\" 4K con HDR y apps integradas.",
+            "rating": { "score": 1.5, "count": 55 }
+        }
+    },
+    {
+        "author": {
+            "name": "Juan",
+            "lastname": "Pérez"
+        },
+        "item": {
+            "id": "MLA777888",
+            "title": "LG Smart TV 65\" OLED",
+            "price": {
+                "currency": "ARS",
+                "amount": 850000,
+                "decimals": 0
+            },
+            "picture": "https://picsum.photos/200/300?random=7",
+            "condition": "new",
+            "free_shipping": false,
+            "sold_quantity": 9,
+            "description": "OLED 65\" con negros puros y Dolby Vision/Atmos.",
+            "rating": { "score": 3.7, "count": 705 }
+        }
+    },
+    {
+        "author": {
+            "name": "Juan",
+            "lastname": "Pérez"
+        },
+        "item": {
+            "id": "MLA999000",
+            "title": "Heladera No Frost Whirlpool 340L",
+            "price": {
+                "currency": "ARS",
+                "amount": 380000,
+                "decimals": 0
+            },
+            "picture": "https://picsum.photos/200/300?random=8",
+            "condition": "new",
+            "free_shipping": true,
+            "sold_quantity": 12,
+            "description": "Heladera 340L No Frost con eficiencia energética A.",
+            "rating": { "score": 4.1, "count": 255 }
+        }
+    },
+    {
+        "author": {
+            "name": "Juan",
+            "lastname": "Pérez"
+        },
+        "item": {
+            "id": "MLA112233",
+            "title": "Heladera Samsung Side by Side 600L",
+            "price": {
+                "currency": "ARS",
+                "amount": 950000,
+                "decimals": 0
+            },
+            "picture": "https://picsum.photos/200/300?random=9",
+            "condition": "new",
+            "free_shipping": false,
+            "sold_quantity": 4,
+            "description": "Side by Side 600L con dispenser y tecnología Twin Cooling.",
+            "rating": { "score": 2.3, "count": 525 }
         }
     }
 ]

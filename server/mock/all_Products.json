@@ -1,33 +1,101 @@
-{
+[
+  {
     "categories": [
-        "Tecnología",
-        "Celulares",
-        "Smartphones"
+      "Tecnología",
+      "Celulares",
+      "Smartphones"
     ],
     "items": [
-        {
-            "id": "MLA111222",
-            "title": "iPhone 13 128GB",
-            "price": {
-                "currency": "ARS",
-                "amount": 800000,
-                "decimals": 0
-            },
-            "picture": "https://your-cdn.com/images/iphone13.jpg",
-            "condition": "new",
-            "free_shipping": true
+      {
+        "id": "MLA111222",
+        "title": "iPhone 13 128GB",
+        "price": {
+          "currency": "ARS",
+          "amount": 800000,
+          "decimals": 0
         },
-        {
-            "id": "MLA333444",
-            "title": "Samsung Galaxy S22",
-            "price": {
-                "currency": "ARS",
-                "amount": 750000,
-                "decimals": 0
-            },
-            "picture": "https://your-cdn.com/images/galaxy22.jpg",
-            "condition": "new",
-            "free_shipping": false
-        }
+        "picture": "https://picsum.photos/200/300?random=1",
+        "condition": "new",
+        "free_shipping": true
+      },
+      {
+        "id": "MLA333444",
+        "title": "Samsung Galaxy S22",
+        "price": {
+          "currency": "ARS",
+          "amount": 750000,
+          "decimals": 0
+        },
+        "picture": "https://picsum.photos/200/300?random=2",
+        "condition": "new",
+        "free_shipping": false
+      }
     ]
-}
+  },
+  {
+    "categories": [
+      "Tecnología",
+      "Televisores",
+      "Smart TV"
+    ],
+    "items": [
+      {
+        "id": "MLA555666",
+        "title": "Samsung Smart TV 55\" 4K UHD",
+        "price": {
+          "currency": "ARS",
+          "amount": 450000,
+          "decimals": 0
+        },
+        "picture": "https://picsum.photos/200/300?random=3",
+        "condition": "new",
+        "free_shipping": true
+      },
+      {
+        "id": "MLA777888",
+        "title": "LG Smart TV 65\" OLED",
+        "price": {
+          "currency": "ARS",
+          "amount": 850000,
+          "decimals": 0
+        },
+        "picture": "https://picsum.photos/200/300?random=4",
+        "condition": "new",
+        "free_shipping": false
+      }
+    ]
+  },
+  {
+    "categories": [
+      "Electrodomésticos",
+      "Heladeras",
+      "Frigoríficos"
+    ],
+    "items": [
+      {
+        "id": "MLA999000",
+        "title": "Heladera No Frost Whirlpool 340L",
+        "price": {
+          "currency": "ARS",
+          "amount": 380000,
+          "decimals": 0
+        },
+        "picture": "https://picsum.photos/200/300?random=5",
+        "condition": "new",
+        "free_shipping": true
+      },
+      {
+        "id": "MLA112233",
+        "title": "Heladera Samsung Side by Side 600L",
+        "price": {
+          "currency": "ARS",
+          "amount": 950000,
+          "decimals": 0
+        },
+        "picture": "https://picsum.photos/200/300?random=8",
+        "condition": "new",
+        "free_shipping": false
+      }
+    ]
+  }
+]
