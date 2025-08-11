@@ -25,7 +25,6 @@ export default async function ItemsPage({ searchParams }: Props) {
   try {
     const data = await getItemsSSR(search);
     items = data?.items ?? [];
-    console.log('SSR', items)
     categories = data?.categories ?? [];
   } catch (error: any) {
     errorMsg = error.message;
