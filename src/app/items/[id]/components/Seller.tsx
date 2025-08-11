@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from './cardDetailsSeller.module.scss'
+import styles from '../styles/seller.module.scss'
 import { currency } from "../../utils/currency";
 import { tax } from "../../utils/tax";
-import { ProductSeller, Seller } from '../type';
+import { ProductSeller, ISeller } from '../type';
 
-const CardDetailsSeller = ({ item, author }: { item: ProductSeller, author: Seller }) => {
+const Seller = ({ item, author }: { item: ProductSeller, author: ISeller }) => {
     return (
         <div className={styles.card_info}>
             <div>
@@ -94,4 +94,4 @@ const CardDetailsSeller = ({ item, author }: { item: ProductSeller, author: Sell
     )
 }
 
-export default CardDetailsSeller
+export default Seller

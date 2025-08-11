@@ -22,15 +22,14 @@
         color: $text-terciary-gray;
       }
 
-      &:last-child {
-        font-weight: bold;
-      }
-
       .list_separator {
         margin: 0 8px;
         color: $text-gray;
-
         padding: 0;
+      }
+
+      .active {
+        font-weight: bold;
       }
 
       .no_list_text {

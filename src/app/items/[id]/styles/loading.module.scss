@@ -1,0 +1,60 @@
+@use "../../../../assets/styleGlobals/variants.scss" as *;
+@use "sass:map";
+
+@keyframes shimmer {
+  0%   { background-color: $bg-gray; }
+  50%  { background-color: $bg-white; }
+  100% { background-color: $bg-gray; }
+}
+
+.container_loading {
+  flex-direction: row;
+  width: 100%;
+  max-width: 1500px;
+  margin: 16px auto;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: $bg-white;
+  border-radius: $border-radius;
+
+  .item_image {
+    height: 500px;
+    width: 400px;
+    background-color: $bg-gray;
+    animation: shimmer 1.5s infinite;
+  }
+
+  .item_content { padding: 16px; }
+
+  .content_title,
+  .content_price {
+    background-color: $bg-gray;
+    animation: shimmer 1.5s infinite;
+  }
+
+  .content_title { height: 20px; margin-bottom: 12px; }
+  .content_price { height: 16px; }
+}
+@media (max-width: map.get($breakpoints, small)) {
+  .container_loading {
+    background-color: #fff;
+    flex-direction: column; /* suele verse mejor en mobile */
+    border-radius: 6px;
+    width: 100%;
+    max-width: 468px;
+    margin: 16px;
+    padding: 16px;
+    display: flex;
+
+    .item_image {
+      width: 100%;
+      height: 300px;
+    }
+
+    .content_title,
+    .content_price {
+      animation-duration: 1.5s;
+    }
+  }
+}

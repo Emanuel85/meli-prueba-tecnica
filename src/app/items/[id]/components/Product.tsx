@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from './cardDetailsProduct.module.scss'
+import styles from '../styles/product.module.scss'
 import { currency } from "../../utils/currency";
 import { tax } from "../../utils/tax";
 import { ProductSeller } from '../type';
 
-const CardDetailsProduct = ({ item }: { item: ProductSeller }) => {
+const Product = ({ item }: { item: ProductSeller }) => {
     const max = 5;
     const pct = Math.max(0, Math.min(item.rating.score / max, 1)) * 100;
     return (
@@ -49,4 +49,4 @@ const CardDetailsProduct = ({ item }: { item: ProductSeller }) => {
     )
 }
 
-export default CardDetailsProduct
+export default Product
