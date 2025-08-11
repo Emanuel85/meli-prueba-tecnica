@@ -1,5 +1,5 @@
 
-import styles from "./card.module.scss";
+import styles from "../styles/card.module.scss";
 import { currency } from "../utils/currency";
 import Link from "next/link";
 import Image from "next/image";

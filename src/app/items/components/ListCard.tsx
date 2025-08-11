@@ -1,4 +1,4 @@
-import styles from "./listCard.module.scss";
+import styles from "../styles/listCard.module.scss";
 import Card from "./Card";
 import { Items } from '../type';
 

@@ -34,7 +34,7 @@ export interface ProductSeller {
     }
 }
 
-export interface Seller {
+export interface ISeller {
     name: string,
     lastname: string
 }

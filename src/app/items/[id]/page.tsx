@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import { getItemByIdSSR } from "../../../api/apiMeli";
 import CardDetails from "./components/CardDetails";
 import Categories from "../components/Categories";
-import styles from "./page.module.scss";
+import styles from "../styles/page.module.scss";
 import { Props } from "./type";
+import MessageCustom from "@/ux-ui/msgCustom/MessageCustom";
 
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -22,14 +23,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ItemDetailPage({ params }: Props) {
   const { id } = await params;
-  const data = await getItemByIdSSR(id);
+  let data: any
+  let errorMsg: string = "";
+  try {
+    data = await getItemByIdSSR(id);
+  } catch (error: any) {
+    errorMsg = error.message;
+  }
   return (
-    <div className={styles.container_cardDetailsCategory} data-testid="container_cardDetailsCategory">
-      <Categories categories={data.categories} />
-      <CardDetails item={data.item} author={data.author} />
-    </div>
+    <>
+      {errorMsg && (
+        <MessageCustom
+          url_msg={'/imagen/imgError.png'}
+          msgPrimary={'Algo salió mal'}
+          msgSecondary={errorMsg} />
+      )}
+      {data && (
+        <div className={styles.container_cardDetailsCategory} data-testid="container_cardDetailsCategory">
+          <Categories categories={data.categories} />
+          <CardDetails item={data.item} author={data.author} />
+        </div>
+      )}
+    </>
   );
 }
-
-// Para evitar cachear por ID si te conviene
-export const revalidate = 0;

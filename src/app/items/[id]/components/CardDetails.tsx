@@ -1,10 +1,10 @@
-import styles from "./cardDetails.module.scss";
-import CardDetailsSeller from "./CardDetailsSeller";
-import CardDetailsProduct from "./CardDetailsProduct";
+import styles from "../styles/cardDetails.module.scss";
+import Seller from "./Seller";
+import Product from "./Product";
 import Image from "next/image";
-import { ProductSeller, Seller } from '../type';
+import { ProductSeller, ISeller } from '../type';
 
-export default function CardDetails({ item, author }: { item: ProductSeller, author: Seller }) {
+export default function CardDetails({ item, author }: { item: ProductSeller, author: ISeller }) {
   return (
     <div className={styles.container_card}>
       <div className={styles.card_image}>
@@ -19,8 +19,8 @@ export default function CardDetails({ item, author }: { item: ProductSeller, aut
           placeholder="blur"
           blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..."
         />
-        <CardDetailsProduct item={item} />
-        <CardDetailsSeller item={item} author={author} />
+        <Product item={item} />
+        <Seller item={item} author={author} />
       </div>
       <div className={styles.card_description} data-testid="card_description">
         <h3>Descripción del producto</h3>
