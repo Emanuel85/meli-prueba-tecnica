@@ -1,9 +1,9 @@
 @use "../../../assets/styleGlobals/variants.scss" as *;
 
-.container_navBar {
+.container_categories {
   padding: 16px 20px;
 
-  .navBar_list {
+  .categories_list {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
