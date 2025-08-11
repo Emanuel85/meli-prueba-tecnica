@@ -13,6 +13,7 @@ const Categories = ({ categories }: { categories: string[] }) => {
                 <Link href={`/items?search=${category}`} style={{ textDecoration: "none", color: "inherit" }}>
                   <span
                     className={styles.list_text}
+                    data-testid={`${category}`}
                   >
                     {category}
                   </span>
