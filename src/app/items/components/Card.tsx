@@ -3,12 +3,12 @@ import styles from "./card.module.scss";
 import { currency } from "../utils/currency";
 import Link from "next/link";
 import Image from "next/image";
-import { Items }from '../type'
+import { Items } from '../type'
 
 function Card({ item }: { item: Items }) {
   return (
     <Link href={`/items/${item.id}`} style={{ textDecoration: "none", color: "inherit" }}>
-      <div className={styles.container_card}>
+      <div className={styles.container_card} data-testid={`container_card${item.id}`}>
         <Image
           width={180}
           height={180}
