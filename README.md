@@ -127,6 +127,8 @@ A continuación se muestran screenshots de partes clave de la prueba:
 - Metadatos dinámicos con Next.js (`generateMetadata`).
 - Títulos y descripciones personalizadas por página/búsqueda.
 
+![SEO](./documentacion/screen_SEO_google.jpg)
+*Resultados de SEO proporcionado por google*
 
 ## Testing
 
