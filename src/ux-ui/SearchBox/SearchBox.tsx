@@ -15,19 +15,19 @@ export default function SearchBox() {
   } = useWithSearchBox();
 
   return (
-    <form onSubmit={handleSubmit} className={`${styles.searchForm} ${isFocused ? styles.focused : ""}`}>
+    <form onSubmit={handleSubmit} className={`${styles.container_form} ${isFocused ? styles.focused : ""}`}>
       <input
         type="text"
         placeholder="Buscar productos, marcas y más..."
-        className={styles.formInputs}
+        className={styles.form_inputs}
         data-testid="search-input"
         value={searchText}
         onChange={handleInputChange}
         onFocus={handleFocus}
         onBlur={handleBlur}
       />
-      <button type="submit" className={styles.formButton} data-testid="search-button">
-        <Image src={iconSearch} alt="icon search" className={styles.formIcon} />
+      <button type="submit" className={styles.form_button} data-testid="search-button">
+        <Image src={iconSearch} alt="icon search" className={styles.button_icon} />
       </button>
     </form>
   );

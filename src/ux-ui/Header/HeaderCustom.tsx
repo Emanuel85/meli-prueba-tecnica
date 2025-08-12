@@ -7,14 +7,14 @@ import Link from "next/link";
 
 function HeaderCustom() {
   return (
-    <header className={styles.header}>
-      <div className={styles.container}>
-        <div className={styles.logo}>
+    <header className={styles.container_header}>
+      <div className={styles.header}>
+        <div className={styles.header_logo}>
           <Link href="/" prefetch={false} aria-label="Ir a la página principal">
             <Image
               src={logo}
               alt="Logo"
-              className={styles.logoImage}
+              className={styles.header_image}
             />
           </Link>
         </div>
