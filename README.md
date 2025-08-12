@@ -10,6 +10,7 @@ Proyecto fullstack para el challenge técnico de Mercado Libre. Incluye frontend
   - [Stack Tecnológico](#stack-tecnológico)
   - [Estructura del Proyecto](#estructura-del-proyecto)
   - [Características y Usabilidad](#características-y-usabilidad)
+  - [Capturas de pantalla](#capturas-de-pantalla)  
   - [Escalabilidad](#escalabilidad)
   - [Performance](#performance)
   - [SEO](#seo)
