@@ -5,7 +5,7 @@
     width: 360px;
     text-align: start;
     border: solid 1px $bg-gray;
-    padding: $spacing-xl;
+    padding: $spacing-2xl;
     border-radius: 4px;
 
     .info_sales {
@@ -172,6 +172,6 @@
 
 @media (max-width: map.get($breakpoints, small)) {
     .card_info {
-        width: 334px;
+        width: 100%;
     }
 }

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { getItemByIdSSR } from "../../../api/apiMeli";
 import CardDetails from "./components/CardDetails";
 import Categories from "../components/Categories";
-import styles from "../styles/page.module.scss";
+import styles from "./page.module.scss";
 import { Props } from "./type";
 import MessageCustom from "@/ux-ui/msgCustom/MessageCustom";
 

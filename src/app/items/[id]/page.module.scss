@@ -1,6 +1,8 @@
-@use "../../../../assets/styleGlobals/variants.scss" as *;
+@use "../../../assets/styleGlobals/variants.scss" as *;
+
 .container_cardDetailsCategory {
   display: flex;
   flex-direction: column;
   background-color: $bg-gray;
+
 }
