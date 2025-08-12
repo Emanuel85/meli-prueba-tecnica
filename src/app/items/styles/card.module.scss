@@ -4,14 +4,14 @@
 .container_card {
   display: flex;
   border-bottom: 4px solid $bg-gray;
-  padding: 16px;
+  padding: $spacing-xl;
   cursor: pointer;
 
   .card_image {
     width: 180px;
     height: 180px;
     border-radius: $border-radius;
-    margin-right: 16px;
+    margin-right: $spacing-xl;
     object-fit: contain;
   }
 
@@ -19,7 +19,7 @@
     text-align: start;
     display: flex;
     flex-direction: column;
-    padding: 16px 0 16px 0;
+    padding: $spacing-xl 0 $spacing-xl 0;
     width: 70%;
 
     .info_details {
@@ -30,7 +30,7 @@
 
       .details_price {
         display: flex;
-        gap: 8px;
+        gap: $spacing-sm;
         align-items: center;
         font-size: $font-size-2xl;
         margin-bottom: 32px;
@@ -68,15 +68,15 @@
     .card_info {
       width: 100%;
       padding: 0;
-      gap: 8px;
+      gap: $spacing-sm;
 
       .info_details {
         .details_price {
           display: flex;
-          gap: 8px;
+          gap: $spacing-sm;
           align-items: center;
           font-size: $font-size-lg;
-          margin-bottom: 8px;
+          margin-bottom: $spacing-sm;
         }
       }
 

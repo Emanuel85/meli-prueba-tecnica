@@ -5,13 +5,13 @@
     width: 360px;
     text-align: start;
     border: solid 1px $bg-gray;
-    padding: 16px;
+    padding: $spacing-xl;
     border-radius: 4px;
 
     .info_sales {
         font-size: $font-size-sm;
         color: $text-secondary-gray;
-        margin-bottom: 8px;
+        margin-bottom: $spacing-sm;
         text-align: end;
         font-weight: 700;
     }
@@ -19,7 +19,7 @@
     .info_title {
         font-size: $font-size-xl;
         font-weight: bold;
-        padding-bottom: 32px;
+        padding-bottom: $spacing-3xl;
     }
 
     .info_price {
@@ -27,7 +27,7 @@
         flex-direction: column;
         align-items: start;
         justify-content: start;
-        margin-bottom: 32px;
+        margin-bottom: $spacing-3xl;
 
         .info_price_value {
             font-size: $font-size-3xl;
@@ -42,15 +42,15 @@
     .info_shipping {
         font-size: $font-size-sm;
         font-weight: $font-weight-bold;
-        margin-bottom: 32px;
+        margin-bottom: $spacing-3xl;
 
         .shipping_text_free {
             color: $text-terciary-gray;
-            padding-bottom: 16px;
+            padding-bottom: $spacing-xl;
 
             .shipping_text_free_secondary {
                 color: $text-gray;
-                padding-bottom: 16px;
+                padding-bottom: $spacing-xl;
             }
         }
 
@@ -76,12 +76,12 @@
         flex-direction: column;
         align-items: start;
         justify-content: start;
-        margin-bottom: 32px;
+        margin-bottom: $spacing-3xl;
 
         .stock_title {
             font-size: $font-size-xl;
             font-weight: $font-weight-bold;
-            padding-bottom: 16px;
+            padding-bottom: $spacing-xl;
         }
 
         .stock_select {
@@ -107,13 +107,13 @@
         flex-direction: column;
         height: 150px;
         justify-content: space-evenly;
-        margin-bottom: 32px;
+        margin-bottom: $spacing-3xl;
 
         .button_sell {
             background-color: $bg-blue;
             color: white;
             font-weight: 600;
-            padding: 10px 20px;
+            padding: 10px $spacing-2xl;
             width: 100%;
             height: 50px;
             border: none;
@@ -126,7 +126,7 @@
             color: $text-blue;
             font-weight: 600;
             height: 50px;
-            padding: 10px 20px;
+            padding: 10px $spacing-2xl;
             width: 100%;
             border: none;
             border-radius: $border-radius;
@@ -139,10 +139,10 @@
         flex-direction: column;
         font-size: $font-size-sm;
         font-weight: $font-weight-bold;
-        margin-bottom: 32px;
+        margin-bottom: $spacing-3xl;
 
         .seller_details {
-            margin-bottom: 8px;
+            margin-bottom: $spacing-sm;
             display: flex;
 
             .details_text {
@@ -160,7 +160,7 @@
         .details_sell_amount {
             font-size: $font-size-md;
             color: $text-secondary-gray;
-            margin-bottom: 8px;
+            margin-bottom: $spacing-sm;
         }
 
         .details_sell_check {

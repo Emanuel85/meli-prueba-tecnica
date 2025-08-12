@@ -1,28 +1,28 @@
 @use "../../assets/styleGlobals/variants.scss" as *;
 @use "sass:map";
 
-.header {
+.container_header {
   background-color: $bg-yellow;
-  padding: 8px 0;
+  padding: $spacing-sm 0;
   width: 100%;
   display: flex;
   align-items: center;
 
-  .container {
+  .header {
     max-width: map.get($breakpoints, xlarge);
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 $spacing-xl;
     display: flex;
     align-items: center;
     gap: 24px;
     width: 100%;
 
-    .logo {
+    .header_logo {
       display: flex;
       align-items: center;
     }
 
-    .logoImage {
+    .header_image {
       width: 134px;
       height: 34px;
       object-fit: contain;

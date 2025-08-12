@@ -11,8 +11,8 @@
   flex-direction: row;
   width: 100%;
   max-width: 1500px;
-  margin: 16px auto;
-  padding: 16px 0;
+  margin: $spacing-xl auto;
+  padding: $spacing-xl 0;
   display: flex;
   justify-content: space-around;
   background-color: $bg-white;
@@ -25,7 +25,7 @@
     animation: shimmer 1.5s infinite;
   }
 
-  .item_content { padding: 16px; }
+  .item_content { padding: $spacing-xl; }
 
   .content_title,
   .content_price {
@@ -33,7 +33,7 @@
     animation: shimmer 1.5s infinite;
   }
 
-  .content_title { height: 20px; margin-bottom: 12px; }
+  .content_title { height: 20px; margin-bottom: $spacing-md; }
   .content_price { height: 16px; }
 }
 @media (max-width: map.get($breakpoints, small)) {
@@ -43,8 +43,8 @@
     border-radius: 6px;
     width: 100%;
     max-width: 468px;
-    margin: 16px;
-    padding: 16px;
+    margin: $spacing-xl;
+    padding: $spacing-xl;
     display: flex;
 
     .item_image {

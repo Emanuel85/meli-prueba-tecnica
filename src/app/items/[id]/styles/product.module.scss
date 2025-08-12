@@ -6,7 +6,7 @@
      .details_sales {
          font-size: $font-size-sm;
          color: $text-gray;
-         margin-bottom: 16px;
+         margin-bottom: $spacing-xl;
      }
 
      .details_ranking {
@@ -30,12 +30,12 @@
      }
 
      .details_price {
-         margin-top: 16px;
+         margin-top: $spacing-xl;
          display: flex;
          flex-direction: column;
 
          .price_value {
-             margin-bottom: 16px;
+             margin-bottom: $spacing-xl;
              font-size: $font-size-4xl;
              font-weight: 200;
          }
@@ -43,7 +43,7 @@
          .price_tax {
              font-size: $font-size-sm;
              color: $text-gray;
-             margin-bottom: 8px;
+             margin-bottom: $spacing-sm;
          }
 
          .price_pago {
