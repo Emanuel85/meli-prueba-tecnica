@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Meli Prueba Técnica
 
-First, run the development server:
+Proyecto fullstack para el challenge técnico de Mercado Libre. Incluye frontend en Next.js (React 19), backend en Node.js/Express y pruebas automáticas.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Tabla de contenidos
+
+- [Meli Prueba Técnica](#meli-prueba-técnica)
+  - [Instrucciones](#instrucciones)
+  - [Stack Tecnológico](#stack-tecnológico)
+  - [Estructura del Proyecto](#estructura-del-proyecto)
+  - [Características y Usabilidad](#características-y-usabilidad)
+  - [Escalabilidad](#escalabilidad)
+  - [Performance](#performance)
+  - [SEO](#seo)
+  - [Testing](#testing)
+
+
+## Instrucciones
+
+1. Clona el repositorio y entra a la carpeta del proyecto.
+2. Ejecuta `npm install` para instalar todas las dependencias (frontend y backend).
+3. Inicia backend con:
+  ```bash
+  npm run server
+  ```
+3. Inicia frontend con:
+  ```bash
+  npm run dev
+  ```
+  
+  Esto levanta:
+  - **Frontend**: Next.js en [http://localhost:3000](http://localhost:3000)
+  - **Backend**: Node.js/Express en [http://localhost:3001](http://localhost:3001)
+
+### Otros scripts útiles
+- `npm run cypress:open`: tests E2E
+- `npm run test`: tests unitarios
+
+
+## Stack Tecnológico
+
+**Frontend:**
+- Next.js 15 (React 19)
+- TypeScript
+- Sass (SCSS modules)
+- Zustand (state management)
+
+**Backend:**
+- Node.js
+- Express
+- Mock de datos (JSON)
+
+**Testing:**
+- Jest, Testing Library (unitarios)
+- Cypress (E2E)
+
+
+## Estructura del Proyecto
+
+```
+├── src/
+│   ├── app/           # Páginas Next.js y vistas
+│   ├── api/           # Lógica de consumo de API
+│   ├── ux-ui/         # Componentes UI reutilizables
+│   ├── store/         # Zustand store
+│   └── assets/        # Estilos globales
+├── server/            # Backend Express y mocks
+├── public/            # Imágenes y assets estáticos
+├── __tests__/         # Pruebas unitarias
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Características y Usabilidad
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Búsqueda de productos** con autogestión de estado y navegación.
+- **Mensajes personalizados** para errores, sin resultados y bienvenida.
+- **Skeleton loaders** durante la carga de datos.
+- **Mobile first**: diseño adaptable y responsivo.
+- **Breadcrumbs** de categorías.
+- **Detalle de producto** con información, imagen y vendedor.
 
-## Learn More
+## Capturas de pantalla
 
-To learn more about Next.js, take a look at the following resources:
+A continuación se muestran screenshots de partes clave de la prueba:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Pantalla de bienvenida
+![Bienvenida](./documentacion/screen_bienvenida.png)
+*Mensaje de bienvenida al ingresar a la app.*
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Estado de carga (Skeleton Loader)
+![Cargando](./documentacion/screen_loading.jpg)
+*Indicador visual mientras se cargan los productos.*
 
-## Deploy on Vercel
+### Sin resultados de búsqueda
+![Sin resultados](./documentacion/screen_no_search.jpg)
+*Mensaje personalizado cuando no se encuentran productos.*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Error en la búsqueda
+![Error](./documentacion/screen_error.jpg)
+*Mensaje de error cuando ocurre un problema en la búsqueda.*
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Input de búsqueda con focus
+![Focus en búsqueda](./documentacion/screen_focus_searchBar.jpg)
+*El input de búsqueda muestra el estado de focus cuando está vacío o se requiere atención.*
+
+### Vista mobile
+![Mobile](./documentacion/screen_mobil.jpg)
+*La aplicación es responsive y se adapta a dispositivos móviles.*
+
+
+## Escalabilidad
+
+- Arquitectura modular: separación clara entre frontend, backend, servicios y componentes.
+- Fácil de extender: agregar nuevas rutas, vistas o servicios es sencillo.
+
+
+## Performance
+
+- Data fetching eficiente y sin caché para SSR (Next.js fetch con `no-store`).
+- Manejo de errores robusto en frontend y backend.
+
+
+## SEO
+
+- Metadatos dinámicos con Next.js (`generateMetadata`).
+- Títulos y descripciones personalizadas por página/búsqueda.
+
+
+## Testing
+
+- Pruebas unitarias con Jest y Testing Library (`npm run test`).
+- Pruebas E2E con Cypress (`npm run cypress:open`).
+- Mocks de datos y servicios para tests confiables.
+
+---
+
+Desarrollado por Emanuel85 para el challenge de Mercado Libre.
