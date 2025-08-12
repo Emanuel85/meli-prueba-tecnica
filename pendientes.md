@@ -1,2 +1,0 @@
--Agregar datos que no utilizaremos en el .json de all_products
--Agregar mas los details items al .json de detail_products

@@ -3,6 +3,8 @@
 
 Proyecto fullstack para el challenge técnico de Mercado Libre. Incluye frontend en Next.js (React 19), backend en Node.js/Express y pruebas automáticas.
 
+> ⚠️ **Nota:** Los archivos mock de datos fueron modificados parcialmente para que la aplicación fuera más funcional y amigable con el usuario.
+
 ## Tabla de contenidos
 
 - [Meli Prueba Técnica](#meli-prueba-técnica)
@@ -47,10 +49,12 @@ Proyecto fullstack para el challenge técnico de Mercado Libre. Incluye frontend
 - Sass (SCSS modules)
 - Zustand (state management)
 
+
 **Backend:**
 - Node.js
 - Express
 - Mock de datos (JSON)
+
 
 **Testing:**
 - Jest, Testing Library (unitarios)
