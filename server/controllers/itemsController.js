@@ -27,21 +27,25 @@ function normalize(str) {
 
 function filterByCategory(groups, query) {
   if (!query) return groups;
-  const normalizedQ = normalize(query);
-  const categoryFilteredGroups = groups.filter(g =>
-    g.categories.some(cat => normalize(cat).includes(normalizedQ))
+
+  const q = normalize(query);
+
+  // 1) Intento por categoría: si coincide, devuelvo SOLO esos grupos
+  const byCategory = groups.filter(g =>
+    g.categories.some(cat => normalize(cat).includes(q))
   );
+  if (byCategory.length > 0) return byCategory;
 
-  if (categoryFilteredGroups.length > 0) {
-    return categoryFilteredGroups;
-  }
+  // 2) Si no hubo match por categoría, busco por título de producto
+  const byTitle = groups
+    .map(g => ({
+      ...g,
+      items: g.items.filter(it => normalize(it.title).includes(q)),
+    }))
+    .filter(g => g.items.length > 0);
 
-  const titleFilteredGroups = groups.map(group => ({
-    ...group,
-    items: group.items.filter(item => normalize(item.title).includes(normalizedQ))
-  })).filter(group => group.items.length > 0);
-
-  return titleFilteredGroups.length > 0 ? titleFilteredGroups : [];
+  // 3) Si no encontré nada, vacío
+  return byTitle.length > 0 ? byTitle : [];
 }
 
 const getItems = asyncHandler(async (req, res, next) => {
