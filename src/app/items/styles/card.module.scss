@@ -6,10 +6,11 @@
   border-bottom: 4px solid $bg-gray;
   padding: $spacing-xl;
   cursor: pointer;
+  height: 320px;
 
   .card_image {
     width: 180px;
-    height: 180px;
+    height: 250px;
     border-radius: $border-radius;
     margin-right: $spacing-xl;
     object-fit: contain;

@@ -40,7 +40,7 @@ const Categories = ({ categories, currentCategory }: CategoriesProps) => {
         </nav>
       ) : (
         <MessageCustom
-          url_msg={'/imagen/imgError.png'}
+          url_msg={'/imagen/sinResult.png'}
           msgPrimary={'No se encontraron resultados'}
           msgSecondary={'Proba con otra búsqueda'} />
       )}

@@ -2,7 +2,7 @@
 @use "sass:map";
 
 .ListCard {
-  max-width: map.get($breakpoints, xlarge);
+  max-width: 98vw;
   border-radius: $border-radius;
   display: flex;
   flex-direction: column;

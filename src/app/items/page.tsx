@@ -23,12 +23,14 @@ export default async function ItemsPage({ searchParams }: Props) {
   let categories: string[] = [];
   let errorMsg: string = "";
   try {
+    console.log('TRY')
     const data = await getItemsSSR(search);
     items = data?.items ?? [];
     categories = data?.categories ?? [];
   } catch (error: any) {
+    console.log('CATCH')
     errorMsg = error.message;
-  }
+  } 
 
   return (
     <>
