@@ -1,4 +1,5 @@
 @use "../../../assets/styleGlobals/variants.scss" as *;
+@use "sass:map";
 
 .container_categories {
   padding: $spacing-xl $spacing-2xl;
@@ -18,10 +19,6 @@
       color: $text-gray;
       cursor: pointer;
 
-      &:hover {
-        color: $text-terciary-gray;
-      }
-
       .list_separator {
         margin: 0 $spacing-sm;
         color: $text-gray;
@@ -39,6 +36,25 @@
           color: $text-gray;
         }
       }
+    }
+  }
+}
+
+@media (max-width: map.get($breakpoints, small)) {
+  .container_categories .categories_list .list_item {
+
+    // aumenta un poco especificidad
+    &:hover {
+      color: $text-terciary-gray;
+    }
+
+    .list_text {
+      color: $text-gray;
+    }
+
+    .list_text#{".active"} {
+      font-weight: 700;
+      color: $text-gray;
     }
   }
 }

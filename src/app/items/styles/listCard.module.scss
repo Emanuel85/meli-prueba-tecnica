@@ -10,3 +10,9 @@
   background-color: $bg-white;
   margin: $spacing-2xl auto;
 }
+
+@media (max-width: map.get($breakpoints, small)) {
+  .ListCard {
+    max-width: 430px;
+  }
+}
